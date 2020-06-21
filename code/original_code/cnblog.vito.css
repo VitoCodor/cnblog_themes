@@ -1,0 +1,818 @@
+/**************************************************************************
+  element style
+**************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*color: #586F76;*/
+  color: #000;
+  background: url(https://images.cnblogs.com/cnblogs_com/vitoboy/1693985/o_200410003145thumb-1920-thegirl.png) fixed no-repeat center 0 #FFF4E6;
+  font-family: Verdana, Arial, Helvetica, sans-serif, "微软雅黑";
+  font-size: 14px;
+  background-color:whitesmoke 0.9;
+  line-height: 1.8;
+}
+
+a {
+  color: #399AB2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FE4165;
+}
+
+img {
+  border: none;
+  border-radius: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+blockquote {
+  background-color: #AED7ED;
+  border-radius: 16px;
+}
+
+.cnblogs_code {
+  background-color: #F6F8FA !important;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+.cnblogs-markdown code {
+  background-color: #F6F8FA !important;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+/**************************************************************************
+  table style
+**************************************************************************/
+
+#cnblogs_post_body table,
+.cnblogs-post-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+#cnblogs_post_body th,
+.cnblogs-post-body th {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#cnblogs_post_body tr:nth-child(2n),
+.cnblogs-post-body tr:nth-child(2n) {
+  background-color: #F6F4F0 !important;
+}
+
+/**************************************************************************
+  header style
+**************************************************************************/
+/**
+ * blogTitle
+ */
+#home {
+  margin: 0px auto;
+  text-align: left;
+  max-width: 1200px;
+}
+
+#blogTitle {
+  padding: 16px;
+  text-decoration: none;
+}
+
+.headermaintitle {
+  font-size: 18px;
+  color: #963432;
+}
+
+#Header1_HeaderTitle {
+/*  font-size: 24px;
+  color: #DE6F64;
+  font-family: "隶书", serif;
+  background-image: -webkit-linear-gradient(
+      left,
+      #FFDCB4,
+      #B96972 25%,
+      #E88A57 50%,
+      #804170 75%,
+      #A596CD
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: masked-animation 1.5s infinite linear;*/
+  font-size: 56px;
+  font-weight: bold;
+  font-family:"迷你简黄草",\96B6\4E66, STLiti,cursive;
+  line-height: 1.5em;
+  margin-top: 20px;
+  color: #515151;
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+#blogTitle h2 {
+  font-size: 18px;
+  font-family: Brush Script MT, serif, "微软雅黑";
+}
+
+/**
+ * navigator
+ */
+#navigator {
+  background: #E8E8E8;
+  height: 40px;
+  line-height: 40px;
+  color: #999999;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 2px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
+}
+
+#navList {
+  float: left;
+}
+
+#navList li {
+  float: none;
+  display: inline;
+  margin-right: 20px;
+  font-size: 18px;
+  font-family:"迷你简黄草",\96B6\4E66, STLiti,cursive;
+  font-weight: bold;
+}
+
+/**
+ * 自动生成的目录的样式
+ */
+div#navCategory blockquote {
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: whitesmoke;
+  border-left: 6px solid #B4B4B4;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+/**
+ * blogStats
+ */
+.blogStats {
+  float: right;
+  color: #999999;
+  margin-right: 16px;
+}
+
+/**************************************************************************
+  main content style
+**************************************************************************/
+#mainContent {
+  margin-left: auto;
+  width: 78%;
+  float: right;
+}
+
+/**************************************************************************
+  article list
+**************************************************************************/
+/*.forFlow {
+  margin: auto;
+}*/
+.forFlow{
+  margin-top: 2em;
+  float: none; 
+  width: auto;
+}
+
+.day {
+  min-height: 10px;
+  _height: 10px;
+  background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #A7A8AD;
+    color: #666666;
+    margin: 0 5px 20px 0;
+    padding:5px 20px 10px;
+}
+.dayTitle {
+  width: 100%;
+  color: #666;
+  line-height:2.2em;
+  font-size:22px;
+  clear:both;
+  border-bottom:1px solid #ccc;
+  text-align:center;
+}
+
+/*.day {
+  border: 1px solid #CCCCCC;
+  border-radius: 16px;
+  margin: 20px 0px;
+}*/
+
+/* article list - post date */
+/*.dayTitle {
+  display: none;
+}*/
+
+/* article list - article title */
+#topics {
+  border: 0px;
+  font-weight: bold;
+  min-height: 200px;
+  margin-bottom: 15px;
+  padding-right:15px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  border-radius: 7px;
+  /*box-shadow: 1px 1px 2px #A7A8AD;*/
+}
+/*.postTitle {
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0 -1px 8px rgba(0, 0, 0, 0.4);
+}*/
+#topics .postTitle {
+  border: 0px;
+  font-size: 220%;
+  font-weight: bold;
+  background: #FCFCFA;
+  border-bottom: 1px solid #999;
+  float: left;
+  line-height: 2em;
+  width: 99%;
+  border-radius: 8px;
+  padding-left: 5px;  
+  /*box-shadow: 1px 1px 2px #A7A8AD;*/
+
+}
+.postTitle a:link, .postTitle a:visited, .postTitle a:active {
+  color: #390;
+  transition:all 0.4s linear 0s
+}
+.postTitle a:hover {
+  color: #F60;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.postCon {
+  padding: 20px 20px 20px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/*.postDesc {
+  padding-right: 20px;
+}*/
+
+.postDesc,
+.entrylistItemPostDesc {
+  color: #999999;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#topics .postDesc {
+  float: right;
+  width: 100%;
+  text-align: right;
+  /*padding-right: 20px;*/
+  /*color: #666;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
+  background: #FCFCFA;
+  border-bottom: 1px solid #999;
+}
+
+/**************************************************************************
+  sidebar style
+**************************************************************************/
+#sideBar {
+  width: 20%;
+  float: left;
+  border: none;
+  overflow: hidden;
+  padding: 5px;
+}
+
+#sideBarMain {
+  margin-top: 20px;
+}
+
+#sideBar h3,
+#MyIng .ing_title {
+  margin: 10px 0 10px 0;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+  box-shadow: 3px 3px 2px #586F76;
+}
+
+h3.catListTitle {
+  color: #FFFFFF;
+  /*background-color: #F1AAA6;*/
+  background-color: #70B7FD;
+  text-indent: 2px;
+}
+
+.newsItem {
+    background-color: #fff;
+    margin: 0 0 20px;
+    overflow: hidden;
+    color: #666;
+    font-family:"迷你简黄草",\96B6\4E66, STLiti,cursive;
+    /*font-family: Georgia,"Times New Roman",Times,sans-serif;*/
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/*old calendar css*/
+/*#calendar {
+  margin-top: 16px;
+  text-align: center;
+}*/
+
+.newsItem,#blog-calendar {
+  margin-bottom:15px;
+  text-indent:0;
+  padding:10px;
+  background: #FAFCFD;
+  border-radius:7px;
+  box-shadow:1px 1px 2px #A7A8AD;
+  line-height: 1.5;
+  /*display: none;*/
+}
+
+.postTitle2 {
+    font-size: 20px;
+}
+
+/**日历控件样式开始**/
+#calendar {
+  margin-bottom: 15px;padding:5px;border-radius:7px;box-shadow:1px 1px 2px #A7A8AD;background: #fff;
+}
+#calendar .Cal {
+  width: 100%;
+  line-height: 1.5;
+}
+#calendar th{padding:2px 5px;}
+#calendar td{padding:2px 5px;}
+#calendar td a{display: block;}
+.Cal {/**日历容器table**/
+  border: none;
+  color: #666;
+}
+#calendar table a:link, #calendar table a:visited, #calendar table a:active {
+  font-weight: bold;
+}
+#calendar table a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #F60;
+}
+.CalTodayDay{/**今天日期样式**/
+  color:#f60;
+}
+#calendar .CalNextPrev a:link,#calendar  .CalNextPrev a:visited, #calendar .CalNextPrev a:active {/**上个月、下个月箭头样式**/
+  font-weight: bold;
+  background-color: white;
+}
+.CalDayHeader{
+  border-bottom:1px solid #ccc; 
+}
+.CalTitle{/**日历年月头部样式**/
+  width:100%;
+  background:white;
+  color:black;
+  border-bottom:1px solid #666; 
+}
+/**日历控件样式结束**/
+
+#footer {
+  height: 30px;
+  line-height: 30px;
+  color: #586F76;
+  text-align: center;
+  padding: 10px 5px 0 15px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+/**************************************************************************
+  article content style
+**************************************************************************/
+.postBody {
+  padding: 10px 20px 10px;
+  border-bottom: 1px solid #D9DBE1;
+  background-color: #FCFCFA;
+}
+
+.feedbackItem {
+  padding: 8px;
+  border-bottom: 1px dotted #CCCCCC;
+}
+
+.post {
+  padding-top: 1px;
+  /*margin-top: 20px;*/
+  border: 1px solid #D9DBE1;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #888888;
+}
+
+#cnblogs_post_body h1 h2 h3 h4 {
+  margin: 1em 0 0.5em 0;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+  line-height: 40px;
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#cnblogs_post_body h1 {
+  color: #399AB2;
+  font-size: 22px;
+  border-bottom: 2px solid rgba(53, 86, 129, 0.3);
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#cnblogs_post_body h2 {
+  color: #60497C;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(53, 86, 129, 0.3);
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#cnblogs_post_body h3 {
+  font-size: 18px;
+  color: #346093;
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#cnblogs_post_body h4 {
+  font-size: 16px;
+  color: #78943A;
+  text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/**
+ * signature
+ */
+#cnblogs_post_body #signature {
+  margin-top: 20px;
+  background-color: #AED7ED;
+  border-radius: 16px;
+  padding: 10px 20px 10px 20px;
+  font-size: 14px;
+}
+
+/**
+ * feedback
+ */
+#div_digg {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  border: 2px solid #ECD7B1;
+  padding: 10px;
+  width: 140px;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px !important;
+  box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5);
+}
+
+/**
+ * comment
+ */
+.feedbackCon {
+  padding-top: 13px;
+  padding-bottom: 10px;
+  background: transparent;
+  margin-left: 1em;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.feedbackItem {
+  padding: 8px;
+  border-bottom: 1px dotted #CCCCCC;
+}
+
+.body_right img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  transition: all 0.5s ease-out;
+  margin-right: 20px;
+  background-color: #F5F5F4;
+  box-shadow: 1px 1px 2px #586F76;
+}
+
+.feedbackManage {
+  float: right;
+}
+
+.blog_comment_body {
+  border: 1px none #888888;
+  border-radius: 15px;
+  padding: 10px;
+  width: 75%;
+  box-shadow: 1px 1px 2px #888888;
+  background: -webkit-linear-gradient(#DBD9CC, #F2F0E4);
+  background: -o-linear-gradient(#DBD9CC, #F2F0E4);
+  background: -moz-linear-gradient(#DBD9CC, #F2F0E4);
+  background: linear-gradient(#DBD9CC, #F2F0E4);
+}
+
+.timeline-comment {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DA;
+  border-radius: 3px;
+}
+
+.feedback_area_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #DE6F64;
+}
+
+/**
+ * 标签
+ */
+div#EntryTag a {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  margin: 0 0.5em 0.5em 0;
+  white-space: nowrap;
+  background-color: #F1F8FF;
+  border-radius: 8px;
+}
+
+div#EntryTag a:hover {
+  background-color: #FFEBCC;
+}
+
+div#BlogPostCategory a {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  margin: 0 0.5em 0.5em 0;
+  white-space: nowrap;
+  background-color: #F1F8FF;
+  border-radius: 8px;
+}
+
+div#BlogPostCategory a:hover {
+  background-color: #FFEBCC;
+}
+
+/**
+ * 广告
+ */
+.c_ad_block {
+  display: none;
+}
+
+#ad_t2 {
+  display: none;
+}
+
+@media only screen and (max-width: 736px) {
+  #navigator {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  #mainContent {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  #sideBar {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  
+  #leftcontentcontainer,#blog-sidecolumn,#sidebar_search,.sidebar-block,.mySearch{
+    background-color: #fff;
+    margin: 0 0 20px;
+    overflow: hidden;
+    color: #666;
+    font-family:"迷你简黄草",\96B6\4E66, STLiti,cursive;
+    /*font-family: Georgia,"Times New Roman",Times,sans-serif;*/
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 最新评论等 开始 */
+#AjaxHolder_UpdatePanel1,
+#AjaxHolder_PostComment_divCommnentArea,
+#profile,
+.entrylist,
+.gallery
+{
+background: none repeat scroll 0 0 #FFFFFF;
+border-radius: 7px;
+box-shadow:1px 1px 2px #A7A8AD;
+margin: 0 0 15px 0;
+min-height: 200px;
+overflow: hidden;
+padding:0 15px;
+text-overflow: ellipsis;
+word-break: break-all;
+}
+#AjaxHolder_PostComment_divCommnentArea{padding: 10px;}
+#profile,
+.entrylist,
+.gallery
+{padding: 10px;}
+.catListEssay,.catListLink,.catListNoteBook,
+.catListTag,
+.catListPostCategory,
+.catListPostArchive,
+.catListImageCategory,
+.catListArticleArchive,
+.catListView,
+.catListFeedback,
+.mySearch,
+.catListComment,
+.catListBlogRank,
+.catList,
+.catListArticleCategory
+{margin-bottom: 15px;background: #FAFCFD;border-radius:7px;box-shadow:1px 1px 2px #A7A8AD;overflow: hidden;zoom: 1;}
+.catListEssay ul li,.catListLink ul li,.catListNoteBook ul li,
+.catListTag ul li,
+.catListPostCategory ul li,
+.catListPostArchive ul li,
+.catListImageCategory ul li,
+.catListArticleArchive ul li,
+.catListView ul li,
+.catListFeedback ul li,
+.catListComment ul li,
+.catListBlogRank ul li,
+.catList ul li,
+.catListArticleCategory ul li
+{text-indent:1em;padding: 10px 5px;border-bottom: 1px solid #DADFE1; border-top: 1px solid #FFFFFF; overflow: hidden;}
+.catListEssay ul li a,.catListLink ul li a,.catListNoteBook ul li a,
+.catListTag ul li a,
+.catListPostCategory ul li a,
+.catListPostArchive ul li a,
+.catListImageCategory ul li a,
+.catListArticleArchive ul li a,
+.catListView ul li a,
+.catListFeedback ul li a,
+.catListComment ul li a,
+.catListBlogRank ul li a,
+.catList ul li a
+.catListArticleCategory ul li a
+{text-indent: 1em;font-size: 15px;}
+.catListEssay ul li a:hover,.catListLink ul li a:hover,.catListNoteBook ul li a:hover,
+.catListTag ul li a:hover,
+.catListPostCategory ul li a:hover,
+.catListPostArchive ul li a:hover,
+.catListImageCategory ul li a:hover,
+.catListView ul li a:hover,
+.catListFeedback ul li a:hover,
+.catListArticleArchive ul li a:hover,
+.catListComment ul li a:hover
+{text-decoration: none;}
+.divRecentCommentAticle{padding:0 10px;}
+.divRecentComment{padding: 10px;font-size: 12px;}
+#AjaxHolder_PostComment_divCommnentArea td{padding: 5px 0;}
+/* 最新评论等 结束 */
+
+
+
+/*.newsItem {
+    background-color: #fff;
+    margin: 0 0 20px;
+    overflow: hidden;
+    color: #666;
+    font-family:"迷你简黄草",\96B6\4E66, STLiti,cursive;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.newsItem,#blog-calendar {
+  margin-bottom:15px;
+  text-indent:0;
+  padding:10px;
+  background: #FAFCFD;
+  border-radius:7px;
+  box-shadow:1px 1px 2px #A7A8AD;
+  line-height: 1.5;
+}*/
+
+
+  #blogCalendar {
+    display: none;
+  }
+
+
+  #sidebar_recentcomments {
+    display: none;
+  }
+
+  #sidebar_topviewedposts {
+    display: none;
+  }
+
+  #sidebar_topcommentedposts {
+    display: none;
+  }
+
+  #sidebar_topdiggedposts {
+    display: none;
+  }
+}
+
+.sidebar-block{
+  background-color: #fff;
+  margin: 0 0 20px;
+  overflow: hidden;
+  color: #666;
+  font-family:"迷你简黄草",\96B6\4E66, STLiti,cursive;
+  /*font-family: Georgia,"Times New Roman",Times,sans-serif;*/
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar_search{
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display:none;
+}
+
+@media (min-width: 600px) {
+  .markdown-section pre > code {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .markdown-section pre > code {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  pre:after {
+    content: "" !important;
+  }
+}
+
+@media (min-width: 600px) {
+  pre code {
+    padding-left: 20px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  pre {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
