@@ -92,6 +92,8 @@ function GenerateContentList() {
   if ($("#cnblogs_post_body").length != 0) {
     $($("#cnblogs_post_body")[0]).prepend(content)
   }
+
+  /*设置博客文章属名*/
   $($("#cnblogs_post_body")[len - 1]).append("<div id='signature'><p>作者：<a href='https://www.cnblogs.com/vitoboy/'>Vitoboy</a></br>欢迎任何形式的转载，但请务必注明出处。</br>限于本人水平，如果文章和代码有表述不当之处，还请不吝赐教。</p></div>")
 }
 function generateTagClouds() {
