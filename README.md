@@ -3,6 +3,7 @@
 ## 自己设置过的炫酷主题
 
 <div align="center">
+
 首页![](./images/doc_use/blog_first_page.png)
 
 
